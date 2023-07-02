@@ -25,7 +25,8 @@ password_length = int(input("Enter the length of the password to be generated \n
 all_data = string.ascii_lowercase + string.ascii_uppercase + string.digits + string.punctuation + string.whitespace
 
 """
-random.sample() does not repeat characters and selects the required no. of characters
+random .sample has a unique feature: 
+    random.sample() does not repeat characters and selects the required no. of characters
 """
 generated_password = random.sample(all_data, password_length)
 # generated_password = "".join(temp_string)
